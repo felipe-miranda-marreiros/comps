@@ -1,23 +1,5 @@
-import { useState } from 'react'
-import { Dropdown } from './components/Dropdown'
+import { TablePage } from './pages/TablePage'
 
 export const App = () => {
-  const [selection, setSelection] = useState(null)
-
-  const handleSelect = (option) => {
-    setSelection(option)
-  }
-
-  const options = [
-    { label: 'Red', value: 'red' },
-    { label: 'Green', value: 'green' },
-    { label: 'Blue', value: 'blue' },
-    { label: 'Black', value: 'black' },
-  ]
-
-  return (
-    <div className="flex">
-      <Dropdown value={selection} onChange={handleSelect} options={options} />
-    </div>
-  )
+  return <TablePage />
 }
