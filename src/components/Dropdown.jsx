@@ -15,7 +15,7 @@ export const Dropdown = ({ options, value, onChange }) => {
     }
     document.addEventListener('click', handler, true)
     return () => {
-      document.removeEventListener('click', handler)
+      document.removeEventListener('click', handler, true)
     }
   }, [])
 
